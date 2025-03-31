@@ -1,0 +1,226 @@
+:root{
+    --sombra-logo:0px 0px 1px 1px #ffffff69;
+}
+.mt-1{
+   margin-top: 8%; 
+}
+.mt-2{
+   margin-top: 16%; 
+}
+.mt-3{
+   margin-top: 24%; 
+}
+.mt-4{
+   margin-top: 32%; 
+}
+/*cards box*/
+.boxCards {
+    cursor: pointer;
+}
+.boxCards .cardInfo{
+    width: 100%;
+    /* height: 16vh; */
+    border-radius: 24px;
+    background-color: #8d7eda;
+    
+}
+.boxCards .cardInfo .cardCabeca {
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+    max-height: 16vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+.boxCards .cardInfo .cardCabeca .logoBox{
+    background-color: #f0f8ff36;
+    padding: 8px;
+    border-radius: 22px;
+    box-shadow: var(--sombra-logo);
+}
+.boxCards .cardInfo .cardCabeca .logoBox img{
+    max-width: 48px;
+    filter: invert(1);
+}
+.boxCards  .cardInfo  .cardCabeca .textBox{
+    color: #fff;
+    font-size: 1.2em;
+}
+/*body div*/
+.boxCards .cardInfo .cardCorpo {
+    /*dinamizar no js*/
+    overflow-y: hidden;
+    height: 0;
+    transition: all .5s;
+    background-color: #ea608c;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    background-image: linear-gradient(195deg, #fd8eb1, #d05179);
+}
+.boxCards .cardInfo .cardCorpo .infoCorpo{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    align-items: center;
+}
+
+.boxCards .cardInfo .cardCorpo .infoCorpo .boxNumeros{
+    text-align: left;
+    color: #fff;
+    font-size: .8rem;
+}
+.boxCards .cardInfo .cardCorpo .infoCorpo .boxNumeros .numeroBoxNumero {
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: -3px;
+}
+
+.boxCards .cardInfo .cardCorpo .infoCorpo .boxBtnSeta img{
+    max-width: 3vw;
+    filter: invert(1);
+}
+/*ativando*/
+.cardInfo.ativo {
+    background-color: #ef5083;
+}
+.boxCards .cardInfo .cardCorpo.ativo{
+    /* display: block; */
+    /* overflow-y: auto; */
+    height: 24vh;
+    /* transition: all .5s; */
+}
+
+.cardInfo.ativo ~ .boxCards .cardInfo .cardCabeca
+{
+    background-image: linear-gradient(174deg, #fe83aa, #eb5788);
+}
+
+.boxCardCabecaAtiva{
+    border-radius: 24px;
+    background-image: linear-gradient(195deg, #fd8eb1, #d05179);
+}
+/*cards items*/
+.cardItem{
+    width: 24vw;
+    padding-top: 4rem;
+    padding-bottom: .8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #fff;
+    border-radius: 24px;
+    position: relative;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.cardItem .card-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cardItem .imgBox{
+    position: absolute;
+    width: 5.5rem;
+    height: 5rem;
+    display: flex;
+    border-radius: 30px;
+    background-color: #8d7eda;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 2px 3px 1px #ccc;
+}
+.cardItem .imgBox img{
+    max-width: 3rem;
+    filter: invert(1);
+}
+.cardItem .auxInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4vh 2vh;
+}
+.cardItem .auxInfo .kmtrs{
+    font-size: .8rem;
+    color: #5a5a5a;
+}
+.cardItem .auxInfo .infoDaysLeft{
+    color: red;
+    font-size: .8rem;
+    padding: 8px;
+    border-radius: 16px;
+    background-color: #fbdfe8;
+}
+.cardItem .card-head .infoBox {
+    line-height: 16px;
+}
+.cardItem .card-head .infoBox .titulo{
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #2a135e;
+    /* text-shadow: 1px 2px 5px #ccc; */
+}
+
+.cardItem .card-head .infoBox .subInfo{
+    margin-top: .9vh;
+    color: #5b5b5b;
+    letter-spacing: 1.3px;
+}
+
+.cardItem .card-head .auxInfo .subInfo{
+    font-size: .9rem;
+    color: #686666;
+    letter-spacing: 2px;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.cardItem .menu_dots{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .3rem;
+    transform: translate(0px, -200%);
+    cursor: pointer;
+}
+.cardItem .menu_dots span{
+    width: .3rem;
+    height: .3rem;
+    border-radius: 50%;
+    background-color: rgb(161, 161, 161);
+   
+}
+/*progress bar*/
+.cardItem .progressBox{
+    height: 1vh;
+    border-radius: 8px;
+    background-color: #b1b1b1;
+    margin-top: 5vh;
+    position: relative;
+    width: 100%;
+}
+
+.progressBox .barra_progresso{
+    width: 18%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    background-color: #3fbe26;
+}
+
+.progressBox .infoProgressBox{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0px, -24px);
+    width: 100%;
+}
+/*cards items*/

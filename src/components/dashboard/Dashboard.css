@@ -1,0 +1,32 @@
+/*cards box*/
+/* .boxCards{
+    width: 23vw;
+    max-width: 30vw;
+    position: relative;
+   padding: 8px 16px;
+}
+.boxCards .cardInfo{
+    width: 90%;
+    height: 16vh;
+    border-radius: 24px;
+   
+    background-color: #a59a37;
+    margin: 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxCards .logoBox{
+    background-color: #f0f8ff36;
+    padding: 8px;
+    border-radius: 22px;
+    box-shadow: 1px 1px 2px 1px #fff;
+}
+.boxCards .logoBox img{
+    max-width: 48px;
+    filter: invert(1);
+}
+.boxCards .textBox{
+    color: #fff;
+    font-size: 1.2em;
+} */

@@ -1,0 +1,126 @@
+.camadaDeFundo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 25%;
+    height: 62%;
+    /* background-color: #3f367069; */
+    background-color: #624fc2;
+}
+.boxFlutuante{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16%;
+    padding: 16px;
+    display: flex;
+    background: transparent;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 99;
+}
+.boxFlutuante .flutuanteTitulo {
+    color: #fff;
+    font-size: 1.4rem;
+}
+.boxFlutuante .selectflutuanteSelecioneBtn {
+    border: 1px solid #ffffff9e;
+    padding: 4px;
+    font-size: 1.2rem;
+    border-radius: 16px;
+    width: 8vw;
+    display: flex;
+    color: aliceblue;
+   
+}
+
+.selectflutuanteSelecioneBtn .imgBoxChefron img {
+    width: 2vw;
+    filter: invert(1);
+}
+
+.apinelGrafico{
+    position: relative;
+    border: 0px solid orange;
+    background-color: #2d169d;
+    background-image: linear-gradient(1deg, #1b124963, #534698);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 24px;
+}
+.apinelGrafico .graficoBox{
+    border: 0px solid cornflowerblue;
+    padding: 8px;
+    flex: .96;
+    z-index: 9;
+}
+.apinelGrafico .abasBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+}
+.apinelGrafico .abasBox .abaMarcador{
+    position: absolute;
+    top: -5%;
+    left: 66px;
+    height: 7.5rem;
+    padding: 24px;
+    background-color: #624fc2;
+    line-height: 28px;
+    width: 12vw;
+    cursor: pointer;
+    z-index: 8;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    transition: all .5s ease;
+}
+.apinelGrafico .abasBox .abaMarcador::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6%;
+    width: 15%;
+    height: 20%;
+    background-color: #332284;
+    border-radius: 50%;
+    transform: translateX(-100%);
+    box-shadow: 13px -7px 6px 0px #624fc2;
+}
+.apinelGrafico .abasBox .abaMarcador::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 6%;
+    width: 15%;
+    height: 20%;
+    background-color: #332284;
+    border-radius: 50%;
+    transform: translateX(100%);
+    box-shadow: -15px -14px 6px 0px #624fc2;
+}
+.apinelGrafico .abasBox .abaItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    /* background-color: #534698; */
+    background-color: #2c188f00;
+    color: #fff;
+    line-height: 28px;
+    width: 12vw;
+    cursor: pointer;
+    z-index: 8;
+}
+.apinelGrafico .abasBox .abaItem .labelItemTitulo {
+    font-size: .8rem;
+}
+.apinelGrafico .abasBox .abaItem  .labelItemNumer {
+    font-size: 1.8rem;
+}

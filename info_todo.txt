@@ -1,0 +1,27 @@
+o que fazer MVP
+ cad 
+  ok - remover textos de teste
+  ok - combobox do select ok
+  enviar para o backend, o cadastro d epessoa	(MOCKADO)
+ REDE
+   colocar o telefone
+   btn editar 
+   btn excluir lista
+   ajustar o status(mockar)
+
+ TODOS
+  salvar lista muito ocorrentes no localstorage
+  limitar o tempo de cadastro dessas info 
+
+ USUARIO
+  implementar usuario
+   crud completo
+     nome,email,senha,cargo(operador,master,supermaster)
+ 
+ DASHBOARD
+   tags cadastardas
+   mapa de endereços cadastrados
+      estados ,cidade, bairros 
+   sexo
+   faixa etaria    
+   

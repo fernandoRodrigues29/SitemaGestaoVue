@@ -1,0 +1,59 @@
+
+.boxCards-v2{
+    background-color: #dd5983ed;
+    padding: 16px;
+    border-radius: 36px;
+    position: relative;
+    padding-top: 50%;
+    /* background-image: url(./img/grafico_linha_dash.png); */
+    background-size: 9rem;
+    background-repeat: no-repeat;
+    background-position: bottom -1px right -2px;
+}
+.boxCards-v2 .card-head{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 13px 16px;
+    border-radius: 32px;
+    background: #ffc4e15c;
+    width: 100%;
+    box-shadow: 0px 1px 8px .001px #fff;
+    align-items: center;
+    justify-content: space-around;
+}
+.boxCards-v2 .card-head .logoBox{
+    background-color: #f0f8ff36;
+    padding: 8px;
+    border-radius: 22px;
+    box-shadow: 1px 1px 2px 1px #fff;
+}
+.boxCards-v2 .card-head .logoBox img {
+    max-width: 48px;
+    filter: invert(1);
+}
+.boxCards-v2 .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.boxCards-v2 .infoBox .supra-titulo{
+    font-size: .9rem;
+    color: #fff;
+}
+.boxCards-v2 .infoBox .principal-info{
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.boxCards-v2 .infoBox .mes-da-acao {
+    letter-spacing: 1px;
+    color: #fff;
+}
+.boxCards-v2 .btnBox img{
+    max-width: 2rem;
+}
